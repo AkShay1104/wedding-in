@@ -8,6 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "start": "main.js",
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
