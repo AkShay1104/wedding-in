@@ -1,0 +1,31 @@
+{
+  "name": "yuknikah",
+  "description": "Wedding invitation WebApp",
+  "main": "index.html",
+  "authors": [
+    "ikhsanalatsary"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "http://ourwedding.ikhsannetwork.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-google-maps": "^2.3.2",
+    "bower": "*",
+    "install": "^1.0.4",
+    "bootstrap-material-design": "^0.5.8",
+    "angular": "^1.5.0",
+    "angular-media-queries": "^0.6.0",
+    "wow": "wowjs#^1.1.2",
+    "scrollup": "^2.4.1",
+    "jQuery-One-Page-Nav": "^3.0.0",
+    "jquery": "2.2.4"
+  }
+}

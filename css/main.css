@@ -1,0 +1,1190 @@
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+
+/*Material Design Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+/*End Material Design Fonts*/
+
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
+
+@font-face {
+  font-family: 'Angellife';
+  src: local('☺'),
+       url('./../fonts/AngellifeFree.ttf') format('truetype'),
+       url('./../fonts/AngellifeFree.woff') format('woff'),
+       url('./../fonts/Angellife.woff2') format('woff2'),
+       url('./../fonts/AngellifeFree.svg') format('svg'),
+       url('./../fonts/AngellifeFree.eot');
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-face-color: #a4c956;
+}
+
+ /*Loading Pump*/
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  opacity: 1;
+  background-color: inherit;
+  /*set higher more than navbar fixed top*/
+  z-index: 1031;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  color: #C22160;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.rhombus2 {
+  margin: 40px 0 0 60px;
+  margin: auto;
+  margin-top: 250px;
+  border-radius: 10px;
+  height: 75px;
+  width: 75px;
+  margin-bottom: 10px;
+  float: center;
+  animation-delay: 0.9s;
+  animation-duration: 0.8s;
+  animation-name: pump;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.26,-0.53,.57,2.32);
+}
+
+.rhombus2:before {
+  content: "";
+  position: absolute;
+  background: #EA4C89;
+  height: 40px;
+  width: 40px;
+  z-index: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  transform: rotate(45deg);
+}
+
+.rhombus2 .circle21 {
+  content: "";
+  position: absolute;
+  background: #EA4C89;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  border-radius: 50%;
+    /*animation-direction: alternate;*/;
+}
+
+.rhombus2 .circle22 {
+  content: "";
+  position: absolute;
+  background: #EA4C89;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin-left: 30px;
+  border-radius: 50%;
+    /*animation-direction: alternate;*/;
+}
+
+@keyframes pump {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/*End Loading*/
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Angellife';
+  font-size: 32px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+#home {
+  position: relative;
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 60px;
+  padding-left: 0;
+  background-color: transparent;
+  background-image: url('./../img/img02.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+}
+
+#home::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+}
+
+#home * {
+  z-index: 3;
+}
+
+blockquote {
+  padding: 0 20px;
+}
+
+.quran {
+  font-family: 'EB Garamond',cursive;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.fa {
+  margin: 0 10px 0 10px;
+}
+
+#home h1 {
+  padding-bottom: 30px;
+  font-family: 'Angellife';
+  font-size: 5em;
+  line-height: 87px;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#home h3 {
+  position: relative;
+  font-family: 'EB Garamond',serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.25);
+}
+
+#home h3::before {
+  content: "";
+  position: absolute;
+  z-index: 3px;
+  left: 20%;
+  top: 50%;
+  height: 2px;
+  width: 20%;
+  margin-top: 0;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -ms-background-size: initial;
+  -o-background-size: initial;
+  background-size: initial;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+}
+
+#home h3::after {
+  content: "";
+  position: absolute;
+  z-index: 3px;
+  right: 20%;
+  top: 50%;
+  height: 2px;
+  width: 20%;
+  margin-top: 0;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -ms-background-size: initial;
+  -o-background-size: initial;
+  background-size: initial;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+}
+
+#home h2 {
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 7em;
+  line-height: 122px;
+  font-weight: 900;
+  color: #a4c956;
+  text-shadow: 8px 7px 0 rgba(164,201,86,0.35);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#home h4 {
+  font-family: 'EB Garamond',serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 8px;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.4);
+}
+
+#home h5 span {
+  background-color: #272727;
+  background-image: none;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -ms-background-size: initial;
+  -o-background-size: initial;
+  background-size: initial;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  padding: 12px 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+#home h5 {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: 'EB Garamond',serif;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.couple {
+  font-family: 'Angellife';
+}
+
+#mempelai p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#mempelai h2 {
+  padding: 20px 0 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #666;
+  font-size: 85px;
+  line-height: 85px;
+  font-weight: 700;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.35);
+  text-align: center;
+  opacity: 0.5;
+}
+
+#mempelai small {
+  font-family: 'Alex Brush', cursive;
+}
+
+.line {
+  background-color: #a4c956;
+}
+
+.line {
+  position: absolute;
+  z-index: 4;
+  top: -26px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background-color: #a4c956;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #b9d57d;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #b9d57d;
+}
+
+#mempelai {
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 60px;
+  padding-left: 0;
+  font-family: 'EB Garamond',serif;
+  font-weight: 300;
+  color: #888;
+  background-color: transparent;
+  background-image: url('../img/bg.png');
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -ms-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  background-position: center center;
+  background-repeat: repeat;
+  background-attachment: initial;
+}
+
+#akad {
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 80px;
+  padding-left: 0;
+  background-color: transparent;
+  background-image: url('./../img/white-rose.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+}
+
+#akad::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+}
+
+#akad * {
+  z-index: 3;
+}
+
+#akad h1 {
+  padding-bottom: 30px;
+  font-family: 'Angellife';
+  font-size: 85px;
+  line-height: 87px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#akad h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Raleway',sans-serif;
+  font-size: 120px;
+  line-height: 122px;
+  font-weight: 900;
+  color: #a4c956;
+  text-shadow: 8px 7px 0 rgba(164,201,86,0.35);
+  text-align: center;
+}
+
+#akad h3 {
+  position: relative;
+  font-family: 'EB Garamond',serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.25);
+}
+
+#akad h3::before {
+  content: "";
+  position: absolute;
+  z-index: 3px;
+  left: 18%;
+  top: 50%;
+  height: 2px;
+  width: 20%;
+  margin-top: 0;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -ms-background-size: initial;
+  -o-background-size: initial;
+  background-size: initial;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+}
+
+#akad h3::after {
+  content: "";
+  position: absolute;
+  z-index: 3px;
+  right: 18%;
+  top: 50%;
+  height: 2px;
+  width: 20%;
+  margin-top: 0;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -ms-background-size: initial;
+  -o-background-size: initial;
+  background-size: initial;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+}
+
+#akad h5 {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: 'EB Garamond',serif;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#akad h5 span {
+  background-color: #272727;
+  background-image: none;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -ms-background-size: initial;
+  -o-background-size: initial;
+  background-size: initial;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  padding: 12px 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+#akad h4 {
+  font-family: 'EB Garamond',serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 8px;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.4);
+}
+
+#akad address {
+  padding-top: 20px;
+  font-family: 'EB Garamond',serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 7px;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.4);
+}
+
+#peta {
+  position: relative;
+}
+
+#peta h1 {
+  position: absolute;
+  z-index: 1;
+  font-family: 'Angellife';
+  text-align: center;
+  left: 50%;
+  color: #fff;
+  font-size: 5em;
+  line-height: 87px;
+  font-weight: 300;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+}
+.angular-google-map-container {
+  height: 600px;
+}
+
+#mutiara {
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 180px;
+  padding-left: 0;
+  background: #efefef;
+  /* background-image: url("../img/IMG_20170930_1549191.jpg"); */
+  /* background-size: cover; */
+}
+
+#mutiara h2 {
+  padding-bottom: 30px;
+  font-family: 'Angellife';
+  font-size: 85px;
+  line-height: 87px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.content-quote {
+  color: #fff;
+}
+
+.content-item {
+  position: relative;
+  width: 80%;
+  margin-left: 8%;
+  clear: both;
+  padding: 2%;
+  font-family: 'EB Garamond',serif;
+  color: #888;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  -ms-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.content-quote blockquote {
+  font-size: 18px;
+  color: #fff;
+  border-color: #fff;
+  position: relative;
+  padding: 20px 25px 40px;
+  margin-bottom: 0;
+  border-color: transparent;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  background-color: #a4c956;
+}
+
+.content-quote blockquote::before {
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 400;
+  content: '\f10d';
+}
+
+.content-quote blockquote::after {
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 400;
+  content: '\f10e';
+  float: right;
+}
+
+#copyright {
+  position: relative;
+  width: 100%;
+  padding: 80px 0 10px;
+  background-color: transparent;
+  background-image: url('../img/bg.png');
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -ms-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  background-position: top center;
+  background-repeat: repeat;
+  background-attachment: initial;
+}
+
+#copyright h2 {
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #a4c956;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#copyright h3 {
+  font-family: 'EB Garamond',serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #999;
+  text-transform: capitalize;
+  letter-spacing: 8px;
+}
+
+#copyright .social-icon {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#copyright .social-icon>li>a {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  display: block;
+  border-radius: 100%;
+  background-color: #a4c956;
+}
+
+#copyright .social-icon>li>a>.fa {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  margin-left: -11px;
+  margin-top: -13px;
+  color: #fff;
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+#copyright p {
+  font-family: 'EB Garamond',serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.info {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.info p {
+  color: #bfbfbf !important;
+  font-size: 10px !important;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    width: 100%;
+    height: 30em;
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    position: relative;
+  }
+
+  .pipit, .ikhsan, .ampersand {
+    font-size: 5em;
+    text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 100px;
+    left: 230px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 180px;
+    left: 320px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 140px;
+    left: 280px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    font-size: larger;
+    top: 275px;
+    left: 265px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    background-size: 100%;
+    float: left;
+    width: 100%;
+    height: 30em;
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    /*position: relative;*/;
+  }
+
+  .pipit, .ikhsan, .ampersand {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 50px;
+    left: 105px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 90px;
+    left: 155px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 70px;
+    left: 135px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    font-size: smaller;
+    top: 140px;
+    left: 117px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    background-size: 100%;
+    float: left;
+    width: 100%;
+    height: 30em;
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+  }
+
+  .pipit, .ikhsan, .ampersand {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 60px;
+    left: 125px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 120px;
+    left: 190px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 90px;
+    left: 160px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 180px;
+    left: 155px;
+  }
+}
+
+@media (max-width: 767px) {
+  section#mempelai {
+    width: auto;
+    margin: 2em auto;
+  }
+
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    background-size: 90%;
+    width: 100%;
+    height: 35em;
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    position: relative;
+  }
+
+  .pipit, .ikhsan, .ampersand {
+    font-size: 6em;
+    text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 190px;
+    left: 340px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 150px;
+    left: 290px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 280px;
+    left: 255px;
+    font-size: 2em;
+  }
+
+  #akad h3::before {
+    left: 10%;
+  }
+
+  #akad h3::after {
+    right: 10%;
+  }
+}
+
+@media (max-width: 640px) {
+  #akad h2 {
+    font-size: 8em;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 170px;
+    left: 280px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 140px;
+    left: 230px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 260px;
+    left: 220px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pipit, .ikhsan, .ampersand {
+    font-size: 5em;
+    text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 65px;
+    left: 120px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 115px;
+    left: 200px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 90px;
+    left: 170px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 195px;
+    left: 170px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  #home h2 {
+    font-size: 4em;
+  }
+
+  #home h3::before {
+    left: 10%;
+  }
+
+  #home h3::after {
+    right: 10%;
+  }
+
+  section#mempelai {
+    width: auto;
+    margin: 2em auto;
+  }
+
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    background-size: 90%;
+    width: 100%;
+    height: 15em;
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    position: relative;
+  }
+
+  .pipit, .ikhsan, .ampersand {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 90px;
+    left: 160px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 75px;
+    left: 130px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 140px;
+    left: 120px;
+    font-size: 11px;
+  }
+
+  #akad h2 {
+    font-size: 4em;
+  }
+
+  #akad h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  #akad h3::before {
+    left: 8%;
+  }
+
+  #akad h3::after {
+    right: 8%;
+  }
+}
+
+@media (max-width: 320px) {
+  .pipit, .ikhsan, .ampersand {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 40px;
+    left: 85px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 75px;
+    left: 130px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 60px;
+    left: 110px;
+  }
+
+  .date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    font-size: 10px;
+  }
+
+  #akad h3::before {
+    left: 2%;
+  }
+
+  #akad h3::after {
+    right: 2%;
+  }
+}
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  background: url('./../img/top.png') no-repeat;
+}
+
+.nav-colored {
+  background-color: #009688 !important;
+}
+
+.nav-transparent {
+  background: rgba(0, 150, 136, 0.1) !important;
+}
+
+.akshay {
+  background-image: url("../img/DSC_08721.jpg");
+  background-size: cover;
+}
+
+.shruthi{
+  background-image: url("../img/DSC_00911.JPG");
+  background-size: cover;
+}
